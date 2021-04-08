@@ -337,7 +337,7 @@ def generate_content_width_css(image_width, yaml_data):
 def get_simple_name(resource, resources):
     if "custom_simplename" in resources[resource]:
         return resources[resource]["custom_simplename"]
-    return re.sub(r'[^a-z0-9]', '', resource.lower())
+    return re.sub(r'[^a-z0-9\*:_]', '', resource.lower()).replace('*', '_').replace(':', '__')
 
 
 ################################################################################

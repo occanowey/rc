@@ -1,0 +1,756 @@
+---
+authors: {}
+
+index_page_display_name: "Project Ozone 3 (Titan)"
+# row_group_count: 0
+
+recipe_types:
+  Crafting: "Craft {IN_ITEMS} into {OUT_ITEM}"
+  # Smelting: "Use a furnace to smelt {IN_ITEMS} into {OUT_ITEM} using {ITEM Fuel}"
+  # Add Water: "Pour water onto {IN_ITEMS} to turn it into {OUT_ITEM}"
+  # right-click: "Right click on {IN_ITEMS} to turn it into {OUT_ITEM}"
+  # as: "Treat {IN_ITEMS} as {OUT_ITEM}"
+  Inscribing: "Use inscriber to inscribe {IN_ITEMS} into {OUT_ITEM}"
+
+stack_sizes:
+  # Double Chest:
+  #   quantity_multiplier: 3456 #9x6x64
+  #   plural: "Double Chests"
+  #   extends_from: "Stack"
+
+  # Shulker Box:
+  #   quantity_multiplier: 1728 # 9x3x64
+  #   plural: "Shulker Boxes"
+  #   extends_from: "Stack"
+
+  Inventory Row:
+    quantity_multiplier: 576
+    plural: "Inventory Rows"
+    extends_from: "Stack"
+
+  Stack:
+    quantity_multiplier: 64
+    plural: "Stacks"
+    extends_from: null
+
+default_stack_size: "Stack"
+
+resources:
+  Dense Cobblestone Generator:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Compact Cobblestone Generator: -8
+        Gold Ingot: -1
+      extra_data:
+        recipe:
+        - Compact Cobblestone Generator
+        - Compact Cobblestone Generator
+        - Compact Cobblestone Generator
+        - Compact Cobblestone Generator
+        - Gold Ingot
+        - Compact Cobblestone Generator
+        - Compact Cobblestone Generator
+        - Compact Cobblestone Generator
+        - Compact Cobblestone Generator
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Dense Cobblestone Generator: 0
+
+  Compact Cobblestone Generator:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Cobblestone Generator: -8
+        Bronze Ingot: -1
+      extra_data:
+        recipe:
+        - Cobblestone Generator
+        - Cobblestone Generator
+        - Cobblestone Generator
+        - Cobblestone Generator
+        - Bronze Ingot
+        - Cobblestone Generator
+        - Cobblestone Generator
+        - Cobblestone Generator
+        - Cobblestone Generator
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Compact Cobblestone Generator: 0
+
+  Cobblestone Generator:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Basic Plating: -4
+        Tin Ingot: -2
+        Lava Bucket: -1
+        Water Bucket: -1
+      extra_data:
+        recipe:
+        - Basic Plating
+        - Tin Ingot
+        - Basic Plating
+        - Lava Bucket
+        - null
+        - Water Bucket
+        - Basic Plating
+        - Tin Ingot
+        - Basic Plating
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Cobblestone Generator: 0
+
+  Basic Plating:
+    recipes:
+    - output: 2
+      recipe_type: Crafting
+      requirements:
+        Lead Ingot: -2
+        Graphite Dust: -2
+      extra_data:
+        recipe:
+        - Lead Ingot
+        - Graphite Dust
+        - null
+        - Graphite Dust
+        - Lead Ingot
+        - null
+        - null
+        - null
+        - null
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Basic Plating: 0
+
+  16384k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Glowstone Dust: -4
+        Engineering Processor: -1
+        4096k ME Storage Component: -3
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Glowstone Dust
+          - 4096k ME Storage Component
+          - Glowstone Dust
+          - 4096k ME Storage Component
+          - Logic Processorq
+          - 4096k ME Storage Component
+          - Glowstone Dust
+          - Engineering Processor
+          - Glowstone Dust
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        16384k ME Storage Component: 0
+
+  4096k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Glowstone Dust: -4
+        Engineering Processor: -1
+        1024k ME Storage Component: -3
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Glowstone Dust
+          - 1024k ME Storage Component
+          - Glowstone Dust
+          - 1024k ME Storage Component
+          - Logic Processorq
+          - 1024k ME Storage Component
+          - Glowstone Dust
+          - Engineering Processor
+          - Glowstone Dust
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        4096k ME Storage Component: 0
+
+  1024k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Glowstone Dust: -4
+        Engineering Processor: -1
+        256k ME Storage Component: -3
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Glowstone Dust
+          - 256k ME Storage Component
+          - Glowstone Dust
+          - 256k ME Storage Component
+          - Logic Processorq
+          - 256k ME Storage Component
+          - Glowstone Dust
+          - Engineering Processor
+          - Glowstone Dust
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        1024k ME Storage Component: 0
+
+  256k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Glowstone Dust: -4
+        Engineering Processor: -1
+        64k ME Storage Component: -3
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Glowstone Dust
+          - 64k ME Storage Component
+          - Glowstone Dust
+          - 64k ME Storage Component
+          - Logic Processorq
+          - 64k ME Storage Component
+          - Glowstone Dust
+          - Engineering Processor
+          - Glowstone Dust
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        256k ME Storage Component: 0
+
+  64k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Glowstone Dust: -4
+        Calculation Processor: -1
+        16k ME Storage Component: -3
+        Quartz Glass: -1
+      extra_data:
+        recipe:
+          - Glowstone Dust
+          - 16k ME Storage Component
+          - Glowstone Dust
+          - 16k ME Storage Component
+          - Quartz Glass
+          - 16k ME Storage Component
+          - Glowstone Dust
+          - Calculation Processor
+          - Glowstone Dust
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        64k ME Storage Component: 0
+
+  16k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Glowstone Dust: -4
+        Calculation Processor: -1
+        4k ME Storage Component: -3
+        Quartz Glass: -1
+      extra_data:
+        recipe:
+          - Glowstone Dust
+          - 4k ME Storage Component
+          - Glowstone Dust
+          - 4k ME Storage Component
+          - Quartz Glass
+          - 4k ME Storage Component
+          - Glowstone Dust
+          - Calculation Processor
+          - Glowstone Dust
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        16k ME Storage Component: 0
+
+  4k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Redstone: -4
+        Calculation Processor: -1
+        1k ME Storage Component: -3
+        Quartz Glass: -1
+      extra_data:
+        recipe:
+          - Redstone
+          - 1k ME Storage Component
+          - Redstone
+          - 1k ME Storage Component
+          - Quartz Glass
+          - 1k ME Storage Component
+          - Redstone
+          - Calculation Processor
+          - Redstone
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        4k ME Storage Component: 0
+
+  1k ME Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Redstone: -4
+        Certus Quartz Crystal: -4
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Redstone
+          - Certus Quartz Crystal
+          - Redstone
+          - Certus Quartz Crystal
+          - Logic Processor
+          - Certus Quartz Crystal
+          - Redstone
+          - Certus Quartz Crystal
+          - Redstone
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        1k ME Storage Component: 0
+
+  4096k ME Fluid Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Lapis Lazuli: -4
+        Engineering Processor: -1
+        1024k ME Fluid Storage Component: -3
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Lapis Lazuli
+          - 1024k ME Fluid Storage Component
+          - Lapis Lazuli
+          - 1024k ME Fluid Storage Component
+          - Logic Processorq
+          - 1024k ME Fluid Storage Component
+          - Lapis Lazuli
+          - Engineering Processor
+          - Lapis Lazuli
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        4096k ME Fluid Storage Component: 0
+
+  1024k ME Fluid Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Lapis Lazuli: -4
+        Engineering Processor: -1
+        256k ME Fluid Storage Component: -3
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Lapis Lazuli
+          - 256k ME Fluid Storage Component
+          - Lapis Lazuli
+          - 256k ME Fluid Storage Component
+          - Logic Processorq
+          - 256k ME Fluid Storage Component
+          - Lapis Lazuli
+          - Engineering Processor
+          - Lapis Lazuli
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        1024k ME Fluid Storage Component: 0
+
+  256k ME Fluid Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Lapis Lazuli: -4
+        Engineering Processor: -1
+        64k ME Fluid Storage Component: -3
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Lapis Lazuli
+          - 64k ME Fluid Storage Component
+          - Lapis Lazuli
+          - 64k ME Fluid Storage Component
+          - Logic Processorq
+          - 64k ME Fluid Storage Component
+          - Lapis Lazuli
+          - Engineering Processor
+          - Lapis Lazuli
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        256k ME Fluid Storage Component: 0
+
+  64k ME Fluid Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Lapis Lazuli: -4
+        Calculation Processor: -1
+        16k ME Fluid Storage Component: -3
+        Quartz Glass: -1
+      extra_data:
+        recipe:
+          - Lapis Lazuli
+          - 16k ME Fluid Storage Component
+          - Lapis Lazuli
+          - 16k ME Fluid Storage Component
+          - Quartz Glass
+          - 16k ME Fluid Storage Component
+          - Lapis Lazuli
+          - Calculation Processor
+          - Lapis Lazuli
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        64k ME Fluid Storage Component: 0
+
+  16k ME Fluid Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Lapis Lazuli: -4
+        Calculation Processor: -1
+        4k ME Fluid Storage Component: -3
+        Quartz Glass: -1
+      extra_data:
+        recipe:
+          - Lapis Lazuli
+          - 4k ME Fluid Storage Component
+          - Lapis Lazuli
+          - 4k ME Fluid Storage Component
+          - Quartz Glass
+          - 4k ME Fluid Storage Component
+          - Lapis Lazuli
+          - Calculation Processor
+          - Lapis Lazuli
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        16k ME Fluid Storage Component: 0
+
+  4k ME Fluid Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Lapis Lazuli: -4
+        Calculation Processor: -1
+        1k ME Fluid Storage Component: -3
+        Quartz Glass: -1
+      extra_data:
+        recipe:
+          - Lapis Lazuli
+          - 1k ME Fluid Storage Component
+          - Lapis Lazuli
+          - 1k ME Fluid Storage Component
+          - Quartz Glass
+          - 1k ME Fluid Storage Component
+          - Lapis Lazuli
+          - Calculation Processor
+          - Lapis Lazuli
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        4k ME Fluid Storage Component: 0
+
+  1k ME Fluid Storage Component:
+    recipes:
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Lapis Lazuli: -4
+        Certus Quartz Crystal: -4
+        Logic Processor: -1
+      extra_data:
+        recipe:
+          - Lapis Lazuli
+          - Certus Quartz Crystal
+          - Lapis Lazuli
+          - Certus Quartz Crystal
+          - Logic Processor
+          - Certus Quartz Crystal
+          - Lapis Lazuli
+          - Certus Quartz Crystal
+          - Lapis Lazuli
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        1k ME Fluid Storage Component: 0
+
+  Quartz Glass:
+    recipes:
+    - output: 4
+      recipe_type: Crafting
+      requirements:
+        Certus Quartz Dust: -5
+        Glass: -4
+      extra_data:
+        recipe:
+          - Certus Quartz Dust
+          - Glass
+          - Certus Quartz Dust
+          - Glass
+          - Certus Quartz Dust
+          - Glass
+          - Certus Quartz Dust
+          - Glass
+          - Certus Quartz Dust
+        shapeless: 0
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Quartz Glass: 0
+
+  Engineering Processor:
+    recipes:
+    - output: 1
+      recipe_type: Inscribing
+      requirements:
+        Printed Engineering Circuit: -1
+        Redstone: -1
+        Printed Silicon: -1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Engineering Processor: 0
+
+  Printed Engineering Circuit:
+    recipes:
+    - output: 1
+      recipe_type: Inscribing
+      requirements:
+        Diamond: -1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Printed Engineering Circuit: 0
+
+  Calculation Processor:
+    recipes:
+    - output: 1
+      recipe_type: Inscribing
+      requirements:
+        Printed Calculation Circuit: -1
+        Redstone: -1
+        Printed Silicon: -1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Calculation Processor: 0
+
+  Printed Calculation Circuit:
+    recipes:
+    - output: 1
+      recipe_type: Inscribing
+      requirements:
+        Pure Certus Quartz Crystal: -1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Printed Calculation Circuit: 0
+
+  Logic Processor:
+    recipes:
+    - output: 1
+      recipe_type: Inscribing
+      requirements:
+        Printed Logic Circuit: -1
+        Redstone: -1
+        Printed Silicon: -1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Logic Processor: 0
+
+  Printed Logic Circuit:
+    recipes:
+    - output: 1
+      recipe_type: Inscribing
+      requirements:
+        Gold Ingot: -1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Printed Logic Circuit: 0
+
+  Printed Silicon:
+    recipes:
+    - output: 1
+      recipe_type: Inscribing
+      requirements:
+        Silicon: -1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Printed Silicon: 0
+
+  Certus Quartz Dust:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Certus Quartz Dust: 0
+
+  Pure Certus Quartz Crystal:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Pure Certus Quartz Crystal: 0
+
+  Glass:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Glass: 0
+
+  Diamond:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Diamond: 0
+
+  Silicon:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Silicon: 0
+
+  Certus Quartz Crystal:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Certus Quartz Crystal: 0
+
+  Glowstone Dust:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Glowstone Dust: 0
+
+  Lapis Lazuli:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Lapis Lazuli: 0
+
+  Redstone:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Redstone: 0
+
+  Gold Ingot:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Gold Ingot: 0
+
+  Bronze Ingot:
+    recipes:
+    - output: 4
+      recipe_type: Crafting
+      requirements:
+        Copper Ingot: -3
+        Tin Ingot: -1
+      extra_data:
+        shapeless: 1
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Bronze Ingot: 0
+
+  Tin Ingot:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Tin Ingot: 0
+
+  Copper Ingot:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Copper Ingot: 0
+
+  Lava Bucket:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Lava Bucket: 0
+
+  Water Bucket:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Water Bucket: 0
+
+  Lead Ingot:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Lead Ingot: 0
+
+  Graphite Dust:
+    recipes:
+    - output: 1
+      recipe_type: Raw Resource
+      requirements:
+        Graphite Dust: 0
